@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostila de Informática Básica</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<section>
+    <h2>
+        <ul class="horizontal-list">
+                <a href="#"><li>Quem Somos</li></a>
+                <a href="#"><li>Links Úteis</li></a>
+                <a href="#"><li>Questionário de fixação</li></a>
+                <a href="#"><li>Dicas ou Sugestões</li></a> 
+        </ul>
+    </h2>
+</section>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Cabeçalho do Curso de Informática Básica">
+    </header>
+    <main>
+        <section id="introducao">
+            <h2><p>Bem-vindo ao Informática na Mão! 
+                O curso de Informática Básica ideal para você se familiarizar com o mundo da tecnologia da informação.</p>
+            </h2>
+        </section>
+        <section id="capitulo1">
+            <h1>No vídeo abaixo você aprenderá conceitos básicos de informática. Vamos lá?</h1>
+            <section id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2R0DpIdEd00?list=PLavmPnUEKD6mSAr2_1dqyk07kdfjt5x9I"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2>Aprendendo as principais funções de um computador</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Mbkrr_vhE4Q?list=PLLxuMgPheaZrhbU-3qQs3CsaBXRq-pfEE"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('header').style.backgroundColor = '#444';
+        });
+        
+        // Adiciona um evento de clique para os links do menu
+        document.querySelectorAll('nav a').forEach(item => {
+            item.addEventListener('click', function() {
+                alert('Você clicou em: ' + item.innerText);
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(226, 162, 35);
+        }
+        .horizontal-list {
+            list-style-type: none; /* Remove default bullet points */
+            padding: center; /* Remove default padding */
+        }
+        
+        .horizontal-list li {
+            display: inline; /* Display list items horizontally */
+            margin-right: 20px; /* Add some spacing between list items */
+        }
+        
+        header {
+            position: relative;
+        }
+        img {
+            width: 100%;
+            height: 10cm;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inlcenterine;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        section {
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            background-color: rgb(21, 61, 123);
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+                main {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+        
+                #video {
+                    margin-top: 20px; /* Adicione margem entre os vídeos */
+                }
+        
+                #video iframe {
+                    max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do contêiner */
+                }
+    </style>
+    <footer>
+        <p>&copy; 2024 Apostila de Informática Básica</p>
+    </footer>
+</body>
+</html>
