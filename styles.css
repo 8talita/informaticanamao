@@ -4,14 +4,19 @@ body {
     padding: 0;
     background-color: rgb(226, 162, 35);
 }
+section {
+    text-align: center;
+}
+
 .horizontal-list {
-    list-style-type: none; /* Remove default bullet points */
-    padding: center; /* Remove default padding */
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
 }
 
 .horizontal-list li {
-    display: inline; /* Display list items horizontally */
-    margin-right: 20px; /* Add some spacing between list items */
+    display: inline-block;
+    margin: 0 10px;
 }
 
 header {
