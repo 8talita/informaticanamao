@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: auto;
     padding: 0;
     background-color: rgb(226, 162, 35);
 }
@@ -8,6 +8,19 @@ section {
     text-align: center;
 }
 
+.image-link-container {
+    display: inline-block;
+    vertical-align: top; 
+    margin-right: 50px; 
+}
+
+.image-container img {
+    width: 250px; 
+    height: auto; 
+    border-radius: 8px; 
+    border: 2px solid #2b1286; 
+    padding: 10px; 
+}
 .vertical-list {
     display: inline-block;
     padding: 0;
@@ -18,12 +31,14 @@ section {
     display: inline-block;
     margin: 0 10px;
 }
-
-#video {
-            margin-top: 20px; 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 162, 35);
+}
+section {
+    text-align: center;
 }
 
-#video iframe {
-            max-width: 100%; 
-}
-       
+ 
